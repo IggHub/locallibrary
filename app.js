@@ -7,7 +7,7 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var mongoose = require('mongoose');
-var mongoDB = `mongodb+srv://iirianto:${process.env.MONGOOSE_PW}@${process.env.DB_NAME}-dqsd0.mongodb.net/test?retryWrites=true`;
+var mongoDB = `mongodb+srv://iirianto:${process.env.MONGOOSE_PW}@${process.env.DB_NAME}-dqsd0.mongodb.net/local_library?retryWrites=true`;
 
 mongoose.connect(mongoDB);
 mongoose.Promise = global.Promise;
